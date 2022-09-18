@@ -71,10 +71,11 @@ class Mybatisplus2DqlApplicationTests {
         // 范围查询 lt le gt ge between
 //        lqw.between(User::getAge, 10, 30);
         // 模糊匹配
-        lqw.like(User::getName,"o");
-        List<User> userList = userDao.selectList(lqw);
+//        lqw.like(User::getName,"o");
+//        List<User> userList = userDao.selectList(lqw);
+//        System.out.println(userList);
+        List<User> userList = userDao.selectList(null);
         System.out.println(userList);
-
 
 
     }
